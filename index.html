@@ -1,0 +1,533 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="images\favicon.png">
+
+  <title>There For You Rehabilitation</title>
+  
+		<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+		
+		<!-- Bootstrap core CSS -->
+  <link href="css\bootstrap.min.css" rel="stylesheet">
+  <link href="css\font-awesome.min.css" rel="stylesheet">
+  <link href="css\style.css" rel="stylesheet">
+  
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><br>
+  <![endif]-->
+
+<script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript"></script>
+<script>
+var fillInPage = (function () {
+    var updateCityText = function (geoipResponse) {
+ 
+        var link = "/shelter?lat=" + geoipResponse.location.latitude;
+        link += "&lon=" +geoipResponse.location.longitude;
+ 
+        /* It's possible that we won't have any names for this city */
+        var cityName = geoipResponse.city.names.en;
+ 
+        /*
+           most_specific_subdivision returns the smallest available
+           subdivision (region) as defined in ISO 3166-2.
+        */
+        var regionName = geoipResponse.most_specific_subdivision.names.en;
+ 
+ 
+        $(".state").html(regionName);
+    };
+ 
+    var onSuccess = function (geoipResponse) {
+        updateCityText(geoipResponse);
+    };
+ 
+    /* If we get an error we will */
+    var onError = function (error) {
+        return;
+    };
+ 
+    return function () {
+        geoip2.city( onSuccess, onError );
+    };
+}());
+ 
+fillInPage();
+</script>
+
+<script type="text/javascript" src="//cdn.callrail.com/companies/831431206/fc0b2ce0b36ce9c00492/12/swap.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-79145656-11"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'UA-79145656-11');
+</script>
+
+</head>
+
+<body>
+
+<div class="secure"><i class="fa fa-lock"></i><br>SSL Secure</div>
+
+<nav id="header-bar" class="navbar">
+<a href="tel:888-524-7820" class="btn-changer" style="text-decoration:none !important;"><div id="notification" style="display:none; text-transform: capitalize;">Our Caring <span class="state"></span> Recovery Advisors are standing by to help you find the right treatment center. Completely Confidential. Call <span class="number hidden-xs">888-524-7820</span> Now.</div></a>
+<div id="topbar" class="gradient"></div>
+	<div class="container">
+    <div class="navbar-brand hidden-sm hidden-xs"><img src="images\logo.svg" class="logo"></div>
+    <div class="col-xs-8 center-block text-center visible-sm visible-xs"><img src="images\logo.svg" class="logo"></div>
+				<div class="pull-right text-center hidden-sm hidden-xs"><div class="btn-wrapper gradient"><a href="tel:888-524-7820" class="btn btn-changer"> <i class="fa fa-phone pulse"></i> <span class="cta">We're Here to Help</span> <span class="number">888-524-7820</span></a></div></div>
+ </div>
+</nav>
+
+<nav class="navbar navbar-default navbar-fixed-bottom visible-xs visible-sm gradient">
+  <a id="footer-button" href="tel:888-524-7820" class="btn btn-changer"> <i class="fa fa-phone reverse-gradient pulse"></i> <span class="cta"><span class="bold">CALL</span>  TODAY</span> <span class="number">888-524-7820</span></a>
+</nav>
+
+<div id="hero">
+<div class="overlay"></div>
+<div class="container">
+		<div id="hero-headline">
+		<div class="col-sm-7">
+			<h1>You Are Not Alone...<br>We Are Here to Help You.</h1>
+			<h2 class="secondary">Are you or a loved one struggling with addiction?<br>We can help you today!</h2>
+			<div class="btn-wrapper gradient hidden-xs"><a href="tel:888-524-7820" class="btn btn-changer"> <i class="fa fa-phone pulse"></i> <span class="cta">Get Your Quote</span> <span class="number">888-524-7820</span></a></div>
+		</div><!--end col-sm-6-->
+		</div><!--end hero headline-->
+		</div><!--end container-->
+</div><!--end hero-->
+
+
+<div id="ctas" class="section">
+	<div class="container">
+		<div class="col-sm-10 text-center center-block">
+			<h1>Drug &amp; Alcohol Treatment Programs</h1>
+		</div><!--end col-sm-9-->
+		<div class="spacer"></div>
+		<div class="col-sm-4 text-center">
+		<img src="images\1.jpg">
+		<h2>Individualized Therapy</h2>
+		<p>Individual Therapy sessions can help family members better understand how to cope with a loved one’s addiction as well as strategize ways to build their life-long recovery.</p>
+		<a href="#" data-toggle="modal" data-target="#learn">Learn More</a>
+		</div><!--end column-->
+		
+		<div class="col-sm-4 text-center">
+		<img src="images\2.jpg">
+		<h2>Didactic Therapy</h2>
+		<p>Didactic Therapy fosters a classroom environment that emphasizes group participation as a means of encouraging recovery and community.</p>
+		<a href="#" data-toggle="modal" data-target="#learn">Learn More</a>
+		</div><!--end column-->
+		
+		<div class="col-sm-4 text-center">
+		<img src="images\3.jpg">
+		<h2>Group Therapy</h2>
+		<p>Group Therapy allows the patient to share their experiences with other people going through similar struggles all while guided by an addiction professional.</p>
+		<a href="#" data-toggle="modal" data-target="#learn">Learn More</a>
+		</div><!--end column-->
+		<div class="col-sm-4 text-center">
+		<img src="images\4.jpg">
+		<h2>Internal Family<br> Systems (IFS)</h2>
+		<p>Internal Family Systems Therapy deals with the personality system and shares many parallels with Alcoholics Anonymous.</p>
+		<a href="#" data-toggle="modal" data-target="#learn">Learn More</a>
+		</div><!--end column-->
+		<div class="col-sm-4 text-center">
+		<img src="images\5.jpg">
+		<h2>Expressive<br> Therapy</h2>
+		<p>Expressive Therapy allows individuals to find and express their struggles during the addiction journey through outlets that help foster the disovery of new passions.</p>
+		<a href="#" data-toggle="modal" data-target="#learn">Learn More</a>
+		</div><!--end column-->
+		<div class="col-sm-4 text-center">
+		<img src="images\6.jpg">
+		<h2>Cognitive Behavioral Therapy</h2>
+		<p>Cognitive Behavioral Therapy is designed to change patterns of thinking or behaviors by focusing on the images, attitudes, and thoughts that a person endures.</p>
+		<a href="#" data-toggle="modal" data-target="#learn">Learn More</a>
+		</div><!--end column-->
+	</div><!--end container-->
+</div><!--end ctas-->
+
+<div id="testimonials">
+	<div class="container">
+	
+	<div id="test" class="carousel slide" data-ride="carousel" style="display: none;">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#test" data-slide-to="0" class="active"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+     <div class="col-sm-4">
+      <div class="card text-center">
+      	<div class="row">
+      		<img src="images\ronald.jpg">
+      	</div><!--end row-->
+      	 <div class="verified"><i class="fa fa-check"></i></div>
+      	<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></p>
+		<p>Great program for anyone than needs help with addiction! Life changing experience and a very unique approach to recovery. This includes therapy, groups, and sober living to the AA aspect of it, which has really helped many create a foundation for a successful life in sobriety. I've experienced all phases of the program and it really helps you get back into the real world gradually, so you can live life again along with the help of a strong community and network.</p>
+		<p class="secondary">Ronald D. via Rehabs.com</p>
+		</div><!--end card-->
+		</div><!--end col-->
+   <div class="col-sm-4">
+      <div class="card text-center">
+      	<div class="row">
+      		<img src="images\ronald.jpg">
+      	</div><!--end row-->
+      	 <div class="verified"><i class="fa fa-check"></i></div>
+      	<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+		<p>Great program for anyone than needs help with addiction! Life changing experience and a very unique approach to recovery. This includes therapy, groups, and sober living to the AA aspect of it, which has really helped many create a foundation for a successful life in sobriety. I've experienced all phases of the program and it really helps you get back into the real world gradually, so you can live life again along with the help of a strong community and network.</p>
+		<p class="secondary">Ronald D. via Rehabs.com</p>
+		</div><!--end card-->
+		</div><!--end col-->
+   <div class="col-sm-4">
+      <div class="card text-center">
+      	<div class="row">
+      		<img src="images\ronald.jpg">
+      	</div><!--end row-->
+      	 <div class="verified"><i class="fa fa-check"></i></div>
+      	<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></p>
+		<p>Great program for anyone than needs help with addiction! Life changing experience and a very unique approach to recovery. This includes therapy, groups, and sober living to the AA aspect of it, which has really helped many create a foundation for a successful life in sobriety. I've experienced all phases of the program and it really helps you get back into the real world gradually, so you can live life again along with the help of a strong community and network.</p>
+		<p class="secondary">Ronald D. via Rehabs.com</p>
+		</div><!--end card-->
+		</div><!--end col-->
+    </div><!--end item-->
+  </div><!--end carousel inner-->
+
+</div><!--end carousel-->
+	
+	<div class="col-sm-8">
+	<div class="col-sm-10 text-left">
+			<h1>Do You or a Loved One Have a Drug Use Problem?</h1>
+			<hr>
+			<p>Here are some questions to ask yourself or someone you know. If the answer to some or
+			all of these questions are yes, you might have an addiction.</p>
+			<ul>
+			<li>Do you think a lot about drugs?</li>
+			<li>Did you ever try to stop or cut down on your drug use but couldn’t?</li>
+			<li>Have you ever thought you couldn’t fit in or have a good time without drugs?</li>
+			<li>Do you ever use drugs because you are upset or angry at other people?</li>
+			<li>Have you ever used a drug without knowing what it was or what it would do to you?</li>
+			<li>Have you ever taken one drug to get over the effects of another?</li>
+			<li>Have you ever made mistakes at a job or at school because you were using drugs?</li>
+			<li>Does the thought of running out of drugs really scare you?</li>
+			<li>Have you ever stolen drugs or stolen stuff to pay for drugs?</li>
+			<li>Have you ever been arrested or in the hospital because of your drug use?</li>
+			<li>Have you ever overdosed on drugs?</li>
+			<li>Has using drugs hurt your relationships with other people?</li>
+			</ul>
+		</div><!--end col-sm-9-->
+		<div class="spacer"></div>
+	</div>
+	
+	<div class="col-sm-4">
+      <div class="card text-center">
+      	<div class="row">
+      		<img src="images\ronald.jpg">
+      	</div><!--end row-->
+      	 <div class="verified"><i class="fa fa-check"></i></div>
+      	<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></p>
+		<p>Great program for anyone than needs help with addiction! Life changing experience and a very unique approach to recovery. This includes therapy, groups, and sober living to the AA aspect of it, which has really helped many create a foundation for a successful life in sobriety. I've experienced all phases of the program and it really helps you get back into the real world gradually, so you can live life again along with the help of a strong community and network.</p>
+		<p class="secondary">Ronald D. via Rehabs.com</p>
+		</div><!--end card-->
+		</div><!--end col-->
+	
+	</div><!--end container-->
+</div><!--end testimonials-->
+
+<div id="plans" class="section">
+	<div class="container">
+		<div class="col-sm-10 text-center center-block">
+			<h1>Addiction Recovery Services Are Covered By Most Insurance Companies</h1>
+		</div><!--end col-sm-9-->
+		<div class="spacer"></div>
+		<div class="col-xs-4 col-sm-offset-1 col-sm-2 vertical-center"><div class="inner"><img src="images\aetna.jpg"></div></div>
+		<div class="col-xs-4 col-sm-2 vertical-center"><div class="inner"><img src="images\anthem.jpg"></div></div>
+		<div class="col-xs-4 col-sm-2 vertical-center"><div class="inner"><img src="images\humana.jpg"></div></div>
+		<div class="col-xs-4 col-sm-2 vertical-center"><div class="inner"><img src="images\cigna.jpg"></div></div>
+		<div class="col-xs-4 col-sm-2 vertical-center"><div class="inner"><img src="images\united.jpg"></div></div>
+		<div class="col-xs-4 col-sm-2 col-sm-offset-1 vertical-center"><div class="inner"><img src="images\emblem.jpg"></div></div>
+		<div class="col-xs-4 col-sm-2 vertical-center"><div class="inner"><img src="images\horizon.jpg"></div></div>
+		<div class="col-xs-4 col-sm-2 vertical-center"><div class="inner"><img src="images\oscar.jpg"></div></div>
+		<div class="col-xs-4 col-sm-2 vertical-center"><div class="inner"><img src="images\amerihealth.jpg"></div></div>
+		<div class="col-xs-4 col-sm-2 vertical-center"><div class="inner"><img src="images\healthrepublic.jpg"></div></div>
+		<div class="clearfix"></div>
+		
+	</div><!--end container-->
+</div><!--end plans-->
+
+<div id="info" class="section">
+	<div class="container">
+	
+	<div class="col-sm-4">
+      <div class="card text-center">
+      	<div class="row">
+      		<img src="images\susan.jpg">
+      	</div><!--end row-->
+      	 <div class="verified"><i class="fa fa-check"></i></div>
+      	<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></p>
+		<p>This was a very powerful influence of my sister's life. When she arrived, she was a mess..coherent only half the time and difficult to talk to. Drug and alcohol addiction had destroyed her life, and any semblance of normalcy was pretty much out the window. We didn't know where else to turn. A friend of mine, who had similar struggles with addiction had recommended it to us. Having had little experience in this area, I wanted to send my sister to a place that had been a positive experience for someone I actually knew. After spending nearly three months in treatment, she left the treatment center with a renewed sense of purpose, with the support of her family and an amazing post-care support system. She shared with me some of her experiences while in treatment and how she was given proper guidance from staff on how to stay close to the people and places that were positive influences that would help keep her sober. She has since been attending weekly meetings with others and events that she claims have kept her sober during times where she worried about relapsing. This isn't just a treatment center, it's a place where people can have a chance to get their life back....where they can gain control and get on top of the triggers that have been ruining their lives. Thank you! You are a Godsend! I would recommend this facility to anyone struggling with addiction.</p>
+		<p class="secondary">Meghan W. via Rehabs.com</p>
+		</div><!--end card-->
+		</div><!--end col-->
+	
+	<div class="col-sm-8">
+	<div class="col-sm-10 col-sm-offset-1 text-left">
+			<h1>Do I Need Treatment?</h1>
+			<hr>
+			<p>People with addictions also need to change how they do things so they can live healthy lives again without drugs. But getting the drug out of a person’s system is just the first stage of treatment.</p>
+			<p><strong>They did not care for their family, their work, or their community.</strong>&nbsp;People with addictions often are in a lot of trouble for breaking rules and not keeping their promises.<br>
+<strong>They did not look after their health.</strong>&nbsp;People with addictions might not be eating or sleeping well, cleaning their teeth, or getting treated for infections. Their drug use might have caused health problems.<br>
+<strong>Things they used to enjoy no longer make them feel good.</strong>&nbsp;When people are on drugs, they stop caring about hobbies, interests, and friends.</p>
+	<p>Talking with doctors or counselors (people trained to listen and help you solve personal problems) or other people in treatment can help.</p>
+	<p><strong>We are available 24/7. Call to speak with a Treatment Specialist and find the help you need.</strong></p>
+	<img src="images\facility.jpg">
+		</div><!--end col-sm-9-->
+		<div class="spacer"></div>
+	</div>
+	
+	
+	
+	</div><!--end container-->
+</div><!--end info-->
+
+<div id="footer">
+
+<div class="container">
+
+<p>© 2020 There For You Rehabilitation - All rights reserved.<br>
+Any third party products, brands or trademarks listed above are the sole property of their respective owner.<br>
+No affiliation or endorsement is intended or implied.<br>
+<a href="privacy-policy\index.htm?n=888-524-7820" target="_blank">Privacy Policy</a><!-- | <a href="#" data-toggle="modal" data-target="#tos">Terms of Service</a> | <a href="#" data-toggle="modal" data-target="#contact">Contact Us</a>-->
+</p></div>
+</div><!--end footer-->
+
+
+<div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title">Privacy Policy</h4>
+</div>
+<div class="modal-body">
+<p><strong>There For You Rehabilitation</strong><br>
+Privacy Policy<br>
+<span class="secondary">Last updated on 4/19/2016.</span></p>
+
+<p>At There For You Rehabilitation, we understand that your privacy is important to you. That is why we are committed to safeguarding the privacy of all our customers and visitors to our website located at www.zenithhealth.com (the “Website”).  Our Privacy Policy, which is set out below, explains how we will look after the information that we collect from you or that you provide to us, including your personally identifiable information (“PII”), and what we will do with it.</p> 
+
+<p>By “PII,” we mean any information about you that could be used to help identify, locate or contact you.   We understand that you value your privacy and the right to control how your PII is collected and used.  Our data collection and retention practices are designed to provide transparency, accountability and choice regarding the management and use of your PII.</p>  
+
+<p>We also provide you with contact information should you wish to remove your PII from our databases.  However, we reserve the right to retain information in our archives and/or as necessary to establish lawful marketing consent.</p>  
+
+<p>By visiting our Website, or providing your information to us via our Website, you are explicitly accepting and consenting to our collection, use, transfer and processing of your information in accordance with this Privacy Policy.</p>
+
+<p>Please read the following carefully to understand our views and practices regarding your personal information.</p>
+
+<p>Unless otherwise set forth herein, we do not collect PII at this time.</p>
+
+<p>THIS WEBSITE IS NOT INTENDED FOR ANYONE UNDER THE AGE OF EIGHTEEN (18).  BY USING THE WEBSITE, YOU EXPRSSLY REPRESENT AND WARRANT THAT YOU HAVE READ, UNDERSTOOD AND AGREE TO THE TERMS OF THIS PRIVACY POLICY.  IF YOU DO NOT UNDERSTAND OR DO NOT AGREE TO BE BOUND BY THIS PRIVACY POLICY, DO NOT INTERACT IN ANY MANNER WHATSOEVER WITH THE WEBSITE OR PROVIDE ANY PERSONAL DATA ON THIS WEBSITE.</p>
+
+<p>Please contact us if you have any questions or comments about our privacy practices or this Privacy Policy.  You can reach us via postal mail at 45 Main St. #816, Brooklyn, NY 11201.</p>
+
+<p>1.	What information do we collect from you?</p>
+<p>We may collect and process the following information about you:<br>
+2.	Unless otherwise herein, we do not collect PII at this time.<br>
+2.1	Information you give to us, including your name, email address and/or telephone number,  when you report a problem with the Website.<br>
+2.2	By visiting and/or supplying your PII on the Website, as applicable, you also agree to allow us to provide aggregated anonymous data about you to third-parties so that they can understand the kinds of visitors to the Website and in order to offer you products and services.  This includes demographic information and behavioral information.<br>
+2.3	Information that we collect automatically each time you visit the Website:<br>
+2.3.1	technical information, including the internet protocol (IP) address used to connect your computer to the internet, browser type and version, time zone setting, browser plug-in types and versions, operating system and platform; and<br>
+2.3.2	information about your visit, including the full Uniform Resource Locators (URL) clickstream to, through and from our site (including date and time); products you viewed or searched for; page response times, download errors, length of visits to certain pages, page interaction information (such as scrolling, clicks, and mouse-overs), and methods used to browse away from the page.<br> 
+2.4	Information we receive from other sources, such as business partners, sub-contractors in technical, payment and delivery services, advertising networks, analytics providers and search information providers.</p>
+<p>3.	Cookies, Web Beacons, Pixel Tags and Log Files <br>
+3.1	The Website uses cookies to distinguish you from other users of the Website.  This helps us to provide you with a more personalized experience when you browse our Website and also allows us to improve our Website.  You may read more about cookies at www.cookiecentral.com and aboutads.info.<br>
+3.2	The Website also contains web beacons, pixel tags, browser analysis tools and web server logs that enable us to track your online behavior, collect information regarding your operating system and browser/device type, record what webpage or email you viewed, track the IP address of the device you use to interact with the applicable online service, record when you open or click on a particular online advertisement link or webpage, and additionally for other information gathering purposes such as the language your system uses and the country and time zone of your device.  Pixel tags and web beacons are tiny graphic images placed on website pages or in emails that allow us to determine whether you have performed specific actions.  When you access these pages or open email messages, the pixel tags and web beacons generate a notice of that action.  These tools permit the measurement of responses to communications and improve related promotions.  You may read more about web beacons at webopedia.com.  Log files include IP addresses, browser type, Internet service provider, referring/exit pages, platform type, date/time stamp, and number of clicks to analyze trends, administer a website, track user's movement in the aggregate, and gather broad demographic information for aggregate use.  As set forth herein, we collect many different types of information from cookies and other technologies, including, without limitation, the website you were visiting before you came to our Website and the website you visit after you leave our Website.  <br>
+3.3	We also employ/enable third-party marketer cookies and other technologies that enable the tracking of your online behavior over time and across different websites on the Internet, to show you targeted advertising for products and/or services and/or to determine which areas of the Internet are most frequently visited.</p>
+<p>4.	How do we use your information?<br>
+4.1	We value your privacy and have taken the necessary precautions to be in compliance with relevant legislation, including, without limitation, the California Online Privacy Protection Act.  We use the information you give to us (as applicable):<br>
+4.1.1	to carry out our obligations arising from any contracts entered into between you and us;<br> 
+4.1.2	to provide you with the information and advertising services that you request from us;<br>
+4.1.3	to provide you with information about products and services we offer that we feel may interest you by email.  You can unsubscribe anytime by following the opt-out instructions included in the relevant communication or by contacting us directly via email at info@zenithhealth.com or in writing to 45 Main St. #816, Brooklyn, NY 11201.  If you do not want us to use your information in this way, please contact us using our or using our contact details.<br>
+4.1.4	for third-party commercial marketing purposes.<br>
+4.1.5	to notify you about changes to our service;<br>
+4.1.6	to perform technical functions and/or to ensure that content on our Website is presented in the most effective manner for you and for your computer;<br>
+4.2	We use the information about you that we collect automatically:<br>
+4.2.1.1	to match your PII (if applicable) to make and improve profiles of you, to track your online browsing habits over time and across different websites on the Internet, to show you targeted advertising for products and/or services and/or to determine which areas of the Internet are most frequently visited.  As such, we reserve the right to target advertising to you by using email of other means of communication to provide promotional offers. <br> 
+4.2.1.2	to administer our Website and for internal operations, including troubleshooting, data analysis, testing, research, statistical and survey purposes;<br>
+4.2.1.3	to improve our Website to ensure that content is presented in the most effective manner for you and for your computer; <br>
+4.2.1.4	to allow you to participate in interactive features of our service, when you choose to do so;<br>
+4.2.1.5	as part of our efforts to keep our Website safe and secure;<br>
+4.2.1.6	to measure or understand the effectiveness of advertising we serve to you and others, and to deliver relevant advertising to you;<br>
+4.2.1.7	to make suggestions and recommendations to you and/or other users of our Website about goods or services that may interest you or them.<br>
+4.3	Because an industry-standard Do-Not-Track protocol has not yet been established, our information collection practices will continue to operate as described in this Privacy Policy regardless of any “Do Not Track” signals that may be sent by certain browsers or selected by you.  We use the information about you that we collect from other sources in combination with the information you give to us and the information about you that we collect automatically.  We will only use such information for the purposes set out herein.</p>
+<p>5.	No Information Collected From Children<br>
+5.1	We encourage parents and guardians to spend time online with their children and to participate and monitor the interactive activities of their children.  We will never knowingly collect any PII about children under the age of thirteen (13).  If we obtain actual knowledge that we have collected PII about a child under the age of thirteen (13), that information will be immediately deleted from our database.  Because we do not collect such information, we have no such information to use or to disclose to third-parties.  We have designed this policy in order to comply with the Children's Privacy Protection Act (“COPPA”).</p>
+<p>6.	Disclosure of your information<br>
+6.1	We may share your information with any member of our group, which means our affiliates, subsidiaries and/or parent companies, and our ultimate holding company and its subsidiaries.<br>
+6.2	We may share your information with selected third-parties including:<br>
+6.2.1	business partners, suppliers and sub-contractors for the performance of any contract we enter into with them or you;<br>
+6.2.2	advertisers and advertising networks for direct commercial marketing purpose and/or that require the data to select and serve relevant advertisements to you and others.  We may disclose information about identifiable individuals to our advertisers and/or provide them with aggregate information about our users (for example, we may inform them that 250 men aged 18-24 have clicked on their advertisement on any given day).  We may also use such aggregate information to help advertisers reach the kind of audience they want to target (for example, women in a particular location).  We may make use of the information we have collected from you to enable us to comply with our advertisers’ wishes by displaying their advertisement to that target audience;<br>
+6.2.3	prospective purchasers of all or a substantial portion of our assets may be provided aggregate information about our users;<br>
+6.2.4	analytics and search engine providers that assist us in the improvement and optimisation of our Website;<br> 
+6.3	We may disclose and/or transfer any/all of your PII and/or other information to third-parties:<br>
+6.3.1	for direct commercial marketing purposes;<br>
+6.3.2	to track your online behavior over time and across different websites on the Internet, to show you targeted advertising for products and/or services and/or to determine which areas of the Internet are most frequently visited;<br>
+6.3.3	that acquire any/all of our business, whether such acquisition is by way of merger, consolidation or purchase of all or a substantial portion of our assets;<br> 
+6.3.4	whose business assets we have acquired, in whole or in part, whether such acquisition is by way of merger, consolidation or purchase of all or a substantial portion of its assets;<br>
+6.3.5	in the event we become the subject of an insolvency proceeding, whether voluntary or involuntary, we or our liquidator, administrator, receiver or administrative receiver may sell, license or otherwise dispose of such information in a transaction approved by the court;<br>
+6.3.6	if we are under a duty to disclose or share your PII in order to comply with any legal obligation, or in order to enforce or apply our various terms, policies and other agreements; or to protect the rights, property, or safety of There For You Rehabilitation, our customers, or others.  This includes exchanging information with other companies and organizations for the purposes of fraud protection and credit risk reduction;<br>
+6.3.7	California Civil Code Section 1798.83 permits California (USA) residents to request and obtain from us a list of what PII that we have disclosed to third-parties for direct marketing purposes by such third-parties, and the identities and addresses of the third-parties with whom we have shared such information during the immediately preceding calendar year.  Requests may be made only once a year and are free of charge.  To request a copy of the information disclosure provided by There For You Rehabilitation pursuant to Section 1798.83 of the California Civil Code, please contact info@zenithhealth.com.</p>
+<p>7.	Where we store your information<br>
+7.1	We have in place a level of security appropriate to the nature of the information we store and the harm that might result from a breach of security.  All information that you send via the Website is encrypted whilst in transit between you and the servers where we store the information.  Any payment transactions will be encrypted using SSL technology in such a way as to ensure that we are not given your financial or credit card information.<br> 
+7.2	Your information is stored on the secure servers of our web services provider. <br> 
+7.3	The information that we collect from you may be processed by our suppliers and/or staff who may be engaged in, among other things, the provision of support services.  We will take all steps reasonably necessary to ensure adequate security for any of your information.<br>
+7.4	Unfortunately, the transmission of information via the internet is not completely secure and, although we will do our best to protect your information, we cannot guarantee the security of any of your information transmitted via our Website.  Consequently, any transmission is at your own risk.  If we become aware that the security of your information has been compromised, we will notify you as required by applicable law.</p>
+<p>8.	Links to third-party websites<br>
+8.1	The Website may feature links to and from third-party websites.  If you follow a link to any of these websites, you should be aware that these websites have their own privacy policies and the operators of those websites will handle your information in accordance with such policies, and not with this Privacy Policy.  For example, such operators might contact you or permit third-parties to contact you for marketing purposes in accordance with their own privacy policies, unless you opt out of such communications. <br>
+8.2	We do not accept any responsibility or liability for third-party websites or their privacy policies and we strongly advise you to check such policies and the reputation of the website before you submit your information to any third-party website.  We welcome any feedback about third-party websites linked to or from our Website. </p>
+<p>9.	Changes to our privacy policy<br>
+9.1	By submitting your information you consent to the use of that information as set out in this Privacy Policy.  If we change our Privacy Policy, we will post the changes on this page and may place notices elsewhere within our Website (such as the home page) for a reasonable period of time, so that you may be aware of the changes. <br>
+9.2	In the event of any changes, we will also update the "Last updated" date at the top of this Privacy Policy.  You should check our Privacy Policy occasionally to ensure that you are happy with any changes we make.  Your continued use of our Website following any changes to this Privacy Policy will mean you accept those changes.</p>
+<p>10.	How to contact us<br>
+10.1	If you would like to contact us with any questions, comments or feedback regarding our Privacy Policy or any other aspect of our products or services, you can contact us by post to 45 Main St. #816, Brooklyn, NY 11201., or by email at info@zenithhealth.com. We will usually confirm receipt by using the same method as you used to contact us.<br>
+10.2	AS APPLICABLE, YOU MAY OPT-OUT OF RECEIVING MOST COMMUNICATIONS FROM US BY CHOOSING NOT TO SUBMIT YOUR PERSONAL DATA.  IF YOU HAVE ALREADY SUBMITTED YOUR PERSONAL DATA TO US AND WISH TO OPT-OUT AND/OR DELETE YOUR INFORMATION AT A LATER DATE, SUBJECT TO THE TERMS SET FORTH HEREIN, YOU MAY DO SO BY SENDING US A REQUEST TO INFO@ZENITHHEALTH.COM.</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn-info" data-dismiss="modal">Close</button>
+</div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="tos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title"></h4>
+</div>
+<div class="modal-body">
+<p><strong>Material Disclosures</strong>
+ 
+<p>By using this website, you accept and agree to these Material Disclosures as well as the provisions of our Privacy Policy and our Terms of Use, which are incorporated by reference. </p> 
+ 
+<p>THIS DOCUMENT CONTAINS AN ARBITRATION AGREEMENT AND CLASS ACTION WAIVER, WHICH AFFECTS YOUR LEGAL RIGHTS.  IT IS STRONGLY RECOMMENDED THAT YOU REVIEW THIS DOCUMENT, AS WELL AS OUR PRIVACY POLICY AND AGREEMENT FOR ELECTRONIC DISCLOSURES AND COMMUNICATIONS IN THEIR ENTIRETY BEFORE ACCESSING OR USING THIS WEBSITE.</p>
+ 
+<p>“We,” “Us” and “Our” mean the operator of this website, as well as its affiliates. “You” means the person or persons who use or submit registration information on this website.</p>
+ 
+<p>You agree that by using our advertising service, you may be connected with one or more third-party service providers via intermediary agents. Participating providers or their agents may confirm your information through the use of a consumer report, which may include your credit score. Such inquires may be shown on your credit report and may have a negative impact thereon. By using this website, you accept and agree to these Material Disclosures as well as the provisions of our Privacy Policy and Terms of Use, which are incorporated by reference. We describe how your information is shared in our Privacy Policy, which you should carefully review. We are a marketing lead generator and advertising service. We do not charge you any fee. The third-party services providers have the option to purchase a given lead from us. Any compensation received is paid by third-party providers for advertising services. We are not an insurance company, an agent, a representative or a provider or broker. We do not provide insurance services. We do not control and are not responsible for the actions of any insurance company, agent or broker. We do not take applications or make credit decisions. We are not an underwriter or administrator and do not provide insurance quotes or policies. Quotes provided by insurance carriers, organizations and/or licensed agents of same. We do not have access to the terms of your insurance plan. For inquiries please contact your third-party provider or agent, directly. There is no guarantee that you will be accepted by a service provider. Eligibility depends on various factors. The operator of this website is not affiliated with, or endorsed by, the U.S. government or any federal insurance program. We do not endorse any product or service. We expressly disclaim liability for, without limitation, any product, service, plan or provider. Exclusions, limitation and conditions may apply. You are not obligated to use our service, initiate contact with an agent or agree to enroll in any plan. This service does not constitute an offer to sell or a solicitation in connection with any product or service. Void where prohibited. The states serviced by this website may change from time to time, without notice. This service is not used for insurance or credit decisions. This service and these disclosures are provided to you for information purposes only and should not be used as a substitute for informed professional advice.</p>
+
+<p>Credit Implications. We do not make credit decisions. Participating providers or their agents may confirm your information through the use of a consumer report, which may include your credit score. Such inquires may be shown on your credit report and may have a negative impact thereon.</p>
+
+<p>THIS WEBSITE AND THE INFORMATION, PRODUCTS AND SERVICES OF THE WEBSITE ARE PROVIDED “AS IS,” WITH NO WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE WARRANTY OF MERCHANTABILITY. WE AND THOSE PURCHASING A LEAD FROM US, ARE NOT LIABLE FOR ANY DIRECT, INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF YOUR USE OF THE WEBSITE OR ANY OF THE INFORMATION, PRODUCTS AND SERVICES OF THE WEBSITE.</p>  
+ 
+<p>YOU AND WE AGREE TO RESOLVE DISPUTES ONLY BY FINAL AND BINDING ARBITRATION as follows:</p> 
+ 
+<p>A.     ANY DISPUTE THAT IN ANY WAY RELATES TO OR ARISES OUT OF THIS AGREEMENT OR FROM ANY OTHER AGREEMENT BETWEEN US, OR SERVICES OR BENEFITS YOU RECEIVE OR CLAIM TO BE OWED FROM US, WILL BE RESOLVED BY FINAL AND BINDING ARBITRATION BY ONE OR MORE ARBITRATORS BEFORE THE AMERICAN ARBITRATION ASSOCIATION (“AAA”), OR ANOTHER ARBITRATION ADMINISTRATOR THAT WE MUTUALLY AGREE UPON. Arbitration will apply not only to claims against us, but also claims against the officers, directors, managers, employees, agents, affiliates, insurers, contractors, successors or assigns of us, as well as the administrator, service agreement administrator, issuer or provider. Arbitration and this paragraph shall apply to claims that arose at any time, including claims arising before this paragraph became binding on the parties. The federal arbitration act (9 U.S.C. § 1 et seq.) and not any state law applies to this arbitration agreement.</p>
+ 
+<p>B.      For claims of $10,000 or less, the party bringing the claim can choose the AAA’s rules for binding arbitration or, alternatively, can bring an individual action in small claims court.</p>
+ 
+<p>C.      YOU GIVE UP YOUR RIGHT TO PARTICIPATE IN A CLASS ACTION.  This means that you may not be a representative or member of any class of claimants or act as a private attorney general in court or in arbitration with respect to any claim. Notwithstanding any other provision of this agreement, the arbitrator shall not have the power to determine that class arbitration is permissible. The arbitrator also shall not have the power to preside over class or collective arbitration, or to award any form of class-wide or collective remedy. Instead, the arbitrator shall have power to award money or injunctive relief only in favor of the individual party seeking relief and only to the extent necessary to provide relief warranted by that party’s individual claim. No class or representative or private attorney general theories of liability or prayers for relief may be maintained in any arbitration held under this agreement. </p>
+ 
+<p>D.     If for some reason the prohibition on class arbitrations set forth in Subsection C cannot be enforced, then the agreement to arbitrate will not apply. </p>
+ 
+<p>E.      IF FOR ANY REASON A CLAIM PROCEEDS IN COURT RATHER THAN THROUGH ARBITRATION, YOU AND WE AGREE THAT THERE WILL NOT BE A JURY TRIAL. </p>
+ 
+<p>YOU ACKNOWLEDGE AND AGREE THAT YOU EXPRESSLY ASSENT TO THE TERMS HEREOF. </p>
+ 
+</div>
+<div class="modal-footer">
+<button type="button" class="btn-info" data-dismiss="modal">Close</button>
+</div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title">Contact</h4>
+</div>
+<div class="modal-body">
+
+<p>There For You Rehabilitation<br>
+45 Main St. #816<br>
+Brooklyn, NY 11201<br>
+United States</p>
+info@thereforyou.rehab</div>
+<div class="modal-footer">
+<button type="button" class="btn-info" data-dismiss="modal">Close</button>
+</div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="learn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<div class="spacer"></div>
+<h1 class="purple secondary">It’s as easy as 1, 2, 3</h1>
+<div class="spacer"></div>
+<ol>
+<li><span class="inner-bullet">Simply call our secured toll-free number and you will be connected with a caring and knowledgeable recovery advisor.</span></li>
+<li><span class="inner-bullet">You will be asked a series of simple questions to help customize your rehabilitation program.</span></li>
+<li><span class="inner-bullet">If eligiable, you will be able to begin your treatment program.</span></li>
+</ol>
+<div class="spacer"></div>
+<center>
+<div class="btn-wrapper gradient"><a href="tel:888-524-7820" class="btn btn-changer"> <i class="fa fa-phone pulse"></i> <span class="cta">We're Here to Help</span> <span class="number">888-524-7820</span></a></div>
+</center>
+<div class="spacer"></div>
+</div><!--end modal body-->
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js\bootstrap.min.js"></script>
+
+<script>
+$(function () {
+    var messages = [],
+        index = 0;
+
+    messages.push('Speak with an Advisor');
+    messages.push("We're Here to Help");
+
+    function cycle() {
+        $('.cta').html(messages[index]);
+        index++;
+
+        if (index === messages.length) {
+            index = 0;
+        }
+
+        setTimeout(cycle, 3000);
+    }
+
+    cycle();
+});
+
+if (document.documentElement.clientWidth > 480) {
+ $('#notification').delay(1800).slideDown();
+}
+</script>
+
+</body>
+</html>
