@@ -1,0 +1,136 @@
+Uri: https://thereforyou.rehab/
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\index.htm
+Content Type: text/html
+
+Uri: https://thereforyou.rehab/images/favicon.png
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\favicon.png
+Content Type: image/png
+
+Uri: https://thereforyou.rehab/css/bootstrap.min.css
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\css\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://thereforyou.rehab/css/font-awesome.min.css
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\css\font-awesome.min.css
+Content Type: text/css
+
+Uri: https://thereforyou.rehab/css/style.css
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\css\style.css
+Content Type: text/css
+
+Uri: https://thereforyou.rehab/privacy-policy/?n=844-729-1728
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\privacy-policy\index.htm
+Content Type: text/html
+
+Uri: https://thereforyou.rehab/images/logo.svg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\logo.svg
+Content Type: image/svg+xml
+
+Uri: https://thereforyou.rehab/images/1.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\1.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/images/2.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\2.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/images/3.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\3.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/images/4.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\4.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/images/5.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\5.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/images/6.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\6.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/images/ronald.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\ronald.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/images/aetna.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\aetna.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/images/anthem.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\anthem.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/images/humana.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\humana.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/images/cigna.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\cigna.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/images/united.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\united.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/images/emblem.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\emblem.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/images/horizon.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\horizon.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/images/oscar.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\oscar.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/images/amerihealth.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\amerihealth.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/images/healthrepublic.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\healthrepublic.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/images/susan.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\susan.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/images/facility.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\facility.jpg
+Content Type: image/jpeg
+
+Uri: https://thereforyou.rehab/js/bootstrap.min.js
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\js\bootstrap.min.js
+Content Type: text/javascript
+
+Uri: https://thereforyou.rehab/css/fonts/fontawesome-webfont.eot?v=4.3.0
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\css\fonts\fontawesome-webfont.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://thereforyou.rehab/css/fonts/fontawesome-webfont.eot?
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\css\fonts\fontawesome-webfont-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://thereforyou.rehab/css/fonts/fontawesome-webfont.woff2?v=4.3.0
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\css\fonts\fontawesome-webfont.woff2
+Content Type: 
+
+Uri: https://thereforyou.rehab/css/fonts/fontawesome-webfont.woff?v=4.3.0
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\css\fonts\fontawesome-webfont.woff
+Content Type: 
+
+Uri: https://thereforyou.rehab/css/fonts/fontawesome-webfont.ttf?v=4.3.0
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\css\fonts\fontawesome-webfont.ttf
+Content Type: 
+
+Uri: https://thereforyou.rehab/css/fonts/fontawesome-webfont.svg?v=4.3.0
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\css\fonts\fontawesome-webfont.svg
+Content Type: image/svg+xml
+
+Uri: https://thereforyou.rehab/images/embrace.jpg
+File Name: C:\Users\robert\Desktop\webcopy downloads\thereforyou.rehab\images\embrace.jpg
+Content Type: image/jpeg
+
